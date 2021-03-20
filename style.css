@@ -1,0 +1,398 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* header */
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /*Hidden by default*/
+    width: 100%; /* Full width (cover the whole page) */
+    height: 92%; /* Full height (cover the whole page) */
+    top: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #text{
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    font-size: 50px;
+    color: white;
+    font-size: .9em;
+    font-weight: 700;
+  }
+
+  #text p {
+      margin-bottom: 1.5em;
+  }
+
+  #text p:hover {
+      cursor: pointer;
+  }
+
+.sponsor {
+    width: 100%;
+    height: 4.5vh;
+    background-color: #1E3C96;
+    display:none;
+}
+
+.sponsor-img{
+    display:flex;
+    justify-content: center;
+}
+
+.sponsor img {
+    margin: .5em 1em 0 0;
+}
+
+
+header {
+    width: 100%;
+    height: 9vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 24px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+.logo img {
+    height: 3em;
+    width: 3em;
+    margin: 1.5em 0 1.5em 1em;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+}
+
+.right img {
+    width: 1.5em;
+    margin-top:.25em;
+}
+
+.right img:nth-child(1) {
+    margin-right: .5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .sticky + main {
+    padding-top: 200px;
+  }
+
+/* swiper */
+
+.swiper-main .swiper-content {
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+}
+
+@media screen and (min-width: 760px ){
+    .swiper-main .swiper-content img {
+        max-height: 250px;
+    }
+    .swiper-main .swiper-content {
+        margin: 3% auto;
+        max-width: 70%;
+    }
+}
+
+    .swiper-main .swiper-slide img {
+    width: 100%;
+    }
+
+  .swiper-pagination-bullet-active {
+      background:black;
+  }
+  .description-swiper {
+    font-size: .6em;
+    color:white;
+    background-color:black;
+    width: 100%;
+    padding: 6% 2%;
+  }
+
+
+/* main */
+.slider {
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.medias {
+    margin: 15% 0 15% 0;
+}
+
+.medias h2 {
+    font-size: 2em;
+    margin-left: 4%;
+    margin-bottom: 2em;
+}
+
+.media {
+    margin-bottom: 5em;
+}
+
+.media img {
+    width: 90vw;
+    margin-left: 4%;
+}
+
+iframe {
+    width: 90vw;
+    margin-left: 4%;
+}
+
+.hashtag {
+    font-weight: normal;
+}
+
+.description {
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-bottom: 5em;
+}
+
+.description p {
+    margin-top: 1.5em
+}
+.description img {
+    margin-top: 2em;
+    width: 100%;
+}
+
+/* times */
+.teams {
+    background-color:#EFEFEF;
+    padding-bottom: 1%;
+}
+
+.team {
+    margin-bottom: 15%;
+}
+
+.team-banner {
+    position: relative;
+    z-index: 1;
+}
+
+.team-banner img {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3vh;
+}
+
+.banner-text {
+    color: white;
+    position:absolute;
+    left: 5%;
+    top: 15%;
+    z-index: 2;
+    font-size: 1.3em;
+}
+
+.banner-text p {
+    font-weight: lighter;
+}
+
+/* player-card */
+
+.cards {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.player-card {
+    margin: 2% 1% 2% 2%;
+    width: 45vw;
+    /* width:31%;
+    margin: 0 1% 2% 1%; */
+    /* Responsivo */
+}
+
+.card-fortnite {
+    margin: 2% auto;
+}
+
+.player-card img {
+    width: 100%
+}
+
+.player-nick {
+    color: #1E3C96;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.player-name {
+    font-size: .8em;
+}
+
+.player-socials i {
+    color: #1E3C96;
+}
+
+.player-socials i:hover {
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    color: #6A6A6A;
+    background-color: black;
+    padding: 3em 0 5em 3em
+}
+
+.media-btn {
+    color:#6A6A6A;
+    margin-bottom: 4em;
+}
+
+.media-btn i {
+    margin: 0 .4em 0 0;
+    font-size: 36px;
+}
+
+.media-btn i:hover {
+    color:white;
+    transition: .2s;
+    cursor:pointer;
+}
+
+footer p {
+    font-weight: bolder;
+    margin-bottom: 2em;
+}
+
+#cadastro input {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #6A6A6A;
+    display: block;
+    margin-bottom: 1.5em;
+    outline: none;
+    color: rgb(212, 212, 212);
+}
+
+#cadastro button {
+    padding: 5px;
+    color: white;
+    background-color: #123397;
+    margin-bottom: 4em;
+    border: transparent;
+}
+
+#cadastro button:hover {
+    cursor: pointer;
+}
+
+footer img {
+    color: #6A6A6A;
+    margin-bottom: 1em;
+}
+
+.copyright {
+    color:#123397;
+    font-weight: normal;
+    font-size: .7em;
+    border:none;
+    border-style: none;
+}
+
+.slogan {
+    font-weight: normal;
+    font-size: .7em;
+    margin-top: -1em;
+    
+}
+
+
+/* responsivo */
+@media (min-width: 690px) {
+    .sponsor {
+        display: block;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
+
+/* responsivo desktop */
+@media (min-width: 920px ) {
+
+}
