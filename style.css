@@ -10,7 +10,7 @@ body {
 
 /* header */
 
-#overlay {
+.overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /*Hidden by default*/
     width: 100%; /* Full width (cover the whole page) */
@@ -22,8 +22,10 @@ body {
     background-color: black; /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
-    opacity: 0;
-    visibility: hidden;
+  }
+
+  .overlay.open {
+      display: flex;
   }
 
   #text{
@@ -68,6 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 
@@ -236,6 +239,17 @@ iframe {
     width: 100%;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 40vw;
+}
+
 /* times */
 .teams {
     background-color:#EFEFEF;
@@ -248,7 +262,6 @@ iframe {
 
 .team-banner {
     position: relative;
-    z-index: 1;
 }
 
 .team-banner img {

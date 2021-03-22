@@ -30,3 +30,9 @@ function myFunction() {
   }
 }
 
+const hamburger = document.querySelector(".menu-btn");
+const overlay = document.querySelector(".overlay")
+
+hamburger.addEventListener("click", () => {
+  overlay.classList.toggle("open");
+});
