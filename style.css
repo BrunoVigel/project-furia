@@ -508,10 +508,6 @@ footer img {
         margin-left: 30vh;
     }
 
-    .sticky {
-        display: none;
-    }
-
     .play-card {
          width:31%;
          margin: 0 1% 2% 1%; 
@@ -581,5 +577,20 @@ footer img {
 
     .media iframe {
         width: 100%;
+    }
+
+    .teams {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team {
+        width: 45vw;
+        
+    }
+
+    .player-card {
+        width: 20vw;
     }
 }
