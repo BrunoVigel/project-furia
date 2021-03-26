@@ -18,10 +18,10 @@
 
 <body>
     <div class="overlay">
-        <div id="text">
-            <p>SOBRE A FÚRIA</p>
-            <p>NOTÍCIAS</p>
-        </div>
+        <ul id="text">
+            <li>SOBRE A FÚRIA</li>
+            <li>NOTÍCIAS</li>
+        </ul>
     </div>
     <div class="sponsor">
         <div class="sponsor-img">
@@ -32,8 +32,20 @@
         </div>
     </div>
     <header>
-        <a class="logo" href="#"><img src="imagens/furia-2.png" alt=""></a>
+        <div class="site-logo"><a class="logo" href="#"><img src="imagens/furia-2.png" alt=""></a></div>
         <div class="right">
+            <div class="links-header">
+                <ul class="links-header-text">
+                    <li>SOBRE A FURIA</li>
+                    <li>NOTÍCIAS</li>
+                </ul>
+                <div class="links-header-btn">
+                     <i class="fab fa-facebook-square"></i>
+                     <i class="fab fa-twitter"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-twitch"></i>
+                </div>
+            </div>
             <a href="#">
                <img src="imagens/brasil.png" alt="">
             </a>
@@ -54,7 +66,7 @@
                         <div class="swiper-content">
                             <img src="imagens/img-swiper-1.png" alt="">
                             <div class="description-swiper">
-                                <h2>FURIA Esports entra para o competitivo de Free Fire (POGGERS)</h2>
+                                <h2>FURIA Esports entra para o competitivo de Free Fire</h2>
                                 <p>A ex-line up da RyZe xCry será a representante da FURIA na modalidade</p>
                             </div>
                         </div>
@@ -118,7 +130,7 @@
             </div>
             <div class="media">
                 <h2>YOUTUBE <span class="hashtag">@furiagg</span></h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m-o0vxJHaFw" frameborder="0"
+                <iframe width="560" height="370" src="https://www.youtube.com/embed/m-o0vxJHaFw" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -417,34 +429,43 @@
         </section>
 
         <section class="description">
-            <h2><span class="hashtag">NASCE</span> UMA FERA</h2>
-            <p>A FURIA é uma relevante organização de esports com uma equipe de Counter-Strike: Global Offensive de
-                nível mundial. Fundada em agosto de 2017, a FURIA já se tornou uma das organizações que mais crescem no
-                mercado de esports.</p>
-            <p>A FURIA também se destaca pelo enorme engajamento de sua base de fãs e sua maneira única de criar
-                conteúdo exclusivo como a FURIATV, o maior canal de streaming de propriedade de uma equipe de jogos
-                eletrônicos do mundo.</p>
+            <div class="description-text">
+                <h2>NASCE <span class="hashtag">UMA FERA</span></h2>
+                <p>A FURIA é uma relevante organização de esports com uma equipe de Counter-Strike: Global Offensive de
+                    nível mundial. Fundada em agosto de 2017, a FURIA já se tornou uma das organizações que mais crescem no
+                    mercado de esports.</p>
+                <p>A FURIA também se destaca pelo enorme engajamento de sua base de fãs e sua maneira única de criar
+                    conteúdo exclusivo como a FURIATV, o maior canal de streaming de propriedade de uma equipe de jogos
+                    eletrônicos do mundo.</p>
+            </div>
             <img src="imagens/about.jpg" alt="Imagem">
         </section>
     </main>
 
     <footer>
-        <p>SIGA A FURIA NAS REDES</p>
-        <div class="media-btn">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitch"></i>
+        <div class="responsive-footer">
+            <div class="media-btn">
+                <p>SIGA A FURIA NAS REDES</p>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitch"></i>
+            </div>
+            
+            <div id="cadastro">
+                <p>FIQUE POR DENTRO</p>
+                <form action="">
+                    <input class="cadastro" type="text" placeholder="Seu nome" size="30">
+                    <input class="cadastro" type="email" placeholder="Seu e-mail" size="30">
+                    <button>ASSINAR</button>
+                </form>
+            </div>
         </div>
-        <p>FIQUE POR DENTRO</p>
-        <div id="cadastro">
-            <input class="cadastro" type="text" placeholder="Seu nome" size="30">
-            <input class="cadastro" type="email" placeholder="Seu e-mail" size="30">
-            <button>ASSINAR</button>
+        <div class="final-footer">
+            <img src="imagens/furia-footer-logo.png" alt="">
+            <p class="copyright">Copyright © 2017 - 2019 FURIA Esports - All Rights Reserved.</p>
+            <p class="slogan">WE'RE ALL FURIA :)</p>
         </div>
-        <img src="imagens/furia-footer-logo.png" alt="">
-        <p class="copyright">Copyright © 2017 - 2019 FURIA Esports - All Rights Reserved.</p>
-        <p class="slogan">WE'RE ALL FURIA :)</p>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
