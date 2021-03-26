@@ -454,8 +454,16 @@ footer img {
     .description {
         display: flex;
     }
+
+    .description-text {
+        flex-direction: column;
+        width: 40vw;
+        margin-right: 2em;
+    }
+
     .description img {
-        width: 55vw;
+        width: 40vw;
+        margin-left: 2em;
     }
 
     .right {
